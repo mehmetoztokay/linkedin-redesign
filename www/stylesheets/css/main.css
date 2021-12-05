@@ -847,4 +847,113 @@ input {
   font-weight: 500;
   color: #fff;
 }
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.56rem;
+  padding-top: 1.56rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item:not(:last-child) {
+  border-bottom: 1px solid #f4f4f4;
+  padding-top: 0;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .photo {
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .photo img {
+  width: 3.375rem;
+  height: 3.375rem;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .info .title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .info .location {
+  margin-bottom: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .info .location .location-info {
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .info .date {
+  margin-bottom: 0.7rem;
+  font-size: 0.75rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .info .date .date-count {
+  font-weight: 500;
+  margin-left: 0.5rem;
+  color: #0275b1;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.experience .experience-item .info .desc {
+  font-size: 0.75rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.56rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item:not(:last-child) {
+  border-bottom: 1px solid #f4f4f4;
+  padding-top: 0;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .photo {
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .photo img {
+  width: 3.375rem;
+  height: 3.375rem;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .info .title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .info .sub-title {
+  font-size: 0.75rem;
+  margin-bottom: 0.375rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .info .date {
+  margin-bottom: 0.7rem;
+  font-size: 0.75rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .info .date .date-count {
+  font-weight: 500;
+  margin-left: 0.5rem;
+  color: #0275b1;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.education .education-item .info .desc {
+  font-size: 0.75rem;
+}
 /*# sourceMappingURL=main.css.map */
