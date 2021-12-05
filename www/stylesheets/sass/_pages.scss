@@ -11,6 +11,9 @@
       .main-container {
         .profile-head {
           background-color: $color-white;
+          border-bottom-left-radius: $radius-default;
+          border-bottom-right-radius: $radius-default;
+          overflow: hidden;
           .image {
             width: 100%;
             height: 11.25rem;
@@ -18,35 +21,95 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-image: url('/www/img/profile/profile-background.jpg');
+            padding: 1.87rem 1.25rem;
+
+            .head-items {
+              display: flex;
+              justify-content: space-between;
+              .upload {
+                display: inline-block;
+                cursor: pointer;
+                .svg-item {
+                  background-color: $color-white;
+                  padding: 0.56rem;
+                  border-radius: $radius-default;
+
+                  svg {
+                    display: block;
+                  }
+                }
+              }
+
+              .head-items-right {
+                display: flex;
+                align-items: center;
+                font-size: 0.75rem;
+
+                .edit {
+                  display: flex;
+                  align-items: center;
+                  padding: 0.58rem 0.687rem;
+                  background-color: $color-white;
+                  border-radius: $radius-default;
+                  margin-right: 0.687rem;
+                  cursor: pointer;
+                  user-select: none;
+                  .svg-item {
+                    margin-right: 0.687rem;
+                    svg {
+                      display: block;
+                    }
+                  }
+                }
+
+                .more {
+                  cursor: pointer;
+                  .svg-item {
+                    background-color: $color-white;
+                    border-radius: $radius-default;
+                    padding: 6px;
+                    svg {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
           }
           .info {
             width: 100%;
-            height: 13rem;
+            height: 11.5rem;
             padding: 0 1.56rem;
             display: flex;
-            .profile-photo {
-              position: relative;
-              top: -25px;
-              border: 10px solid $color-white;
-              border-radius: 50%;
-              width: 11rem;
-              height: 11rem;
-              overflow: hidden;
+            justify-content: space-between;
 
-              img {
-                display: block;
-                width: 100%;
-                height: 100%;
+            .pp {
+              .profile-photo {
+                position: relative;
+                top: -25px;
+                border: 10px solid $color-white;
+                border-radius: 50%;
+                width: 11rem;
+                height: 11rem;
+                overflow: hidden;
+
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                }
               }
             }
 
             .profile-info {
-              margin-top: 1.5rem;
+              margin-top: 1.56rem;
               margin-left: 1.56rem;
+              width: 100%;
               .info-top {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
                 .title {
                   font-weight: $weight-bold;
                   font-size: 1.1rem;
@@ -70,8 +133,36 @@
                   }
                   p {
                     line-height: 1;
+                    font-size: 0.75rem;
                   }
                 }
+              }
+            }
+
+            .profile-summary {
+              font-size: 0.875rem;
+              margin-top: 0.8rem;
+            }
+
+            .buttons {
+              margin-top: 1.1rem;
+              display: flex;
+              .button {
+                font-size: 0.75rem;
+                border-radius: $radius-default;
+                font-weight: $weight-medium;
+              }
+
+              .button-1 {
+                background: $color-primary-linear;
+                color: $color-white;
+                margin-right: 0.95rem;
+                padding: 0.4rem 2.25rem;
+              }
+              .button-2 {
+                border: 1px solid $color-primary;
+                color: $color-primary;
+                padding: 0.4rem 1rem;
               }
             }
           }
