@@ -732,6 +732,7 @@ input {
   position: absolute;
   z-index: 1;
   cursor: pointer;
+  top: 4.6rem;
 }
 
 .page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.projects .profile-swiper .button-swipers svg {
@@ -740,11 +741,110 @@ input {
 
 .page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.projects .profile-swiper .button-swipers.button-prev {
   left: -1.25rem;
-  top: 4.1rem;
 }
 
 .page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.projects .profile-swiper .button-swipers.button-next {
   right: -1.25rem;
-  top: 4.1rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item {
+  border: 1px solid #f4f4f4;
+  border-radius: 6px;
+  padding: 0.9rem;
+  width: calc(100% / 3 - 0.8rem);
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-top {
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-top .skill-count {
+  color: #0275b1;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons {
+  margin-top: 0.687rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person:nth-child(2) {
+  -webkit-transform: translateX(calc(-100% + 1.8rem / 2));
+          transform: translateX(calc(-100% + 1.8rem / 2));
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person:nth-child(3) {
+  -webkit-transform: translateX(calc(-100% + 0.85rem / 2));
+          transform: translateX(calc(-100% + 0.85rem / 2));
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person:nth-child(4) {
+  -webkit-transform: translateX(calc(-100% + -0.25rem / 2));
+          transform: translateX(calc(-100% + -0.25rem / 2));
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person:nth-child(5) {
+  -webkit-transform: translateX(calc(-100% + -1.25rem / 2));
+          transform: translateX(calc(-100% + -1.25rem / 2));
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person:nth-child(6) {
+  -webkit-transform: translateX(calc(-100% + -2.25rem / 2));
+          transform: translateX(calc(-100% + -2.25rem / 2));
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-profile .container .content .main-container .profile-tab-items .profile-tab-item .item.skills .skills-items .skill-item .skill-persons .skill-person.last {
+  line-height: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0077b5), to(#0e6795));
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
