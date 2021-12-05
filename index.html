@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 5000px">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Linkedin | Redesign</title>
+    <link rel="stylesheet" href="www/stylesheets/css/swiperjs/_swiper.css" />
     <link rel="stylesheet" href="www/stylesheets/css/main.css" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
@@ -27,20 +28,8 @@
                     <div class="link-head">
                       <div class="svg-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20"
-                            stroke="#0275B1"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20"
-                            stroke="#0275B1"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
+                          <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                           <path
                             d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z"
                             stroke="#0275B1"
@@ -426,10 +415,89 @@
                 </div>
               </div>
             </div>
+
+            <div class="profile-tabs">
+              <nav class="profile-tabs-menu">
+                <a class="menu-item is-active">PROFILE</a>
+                <a class="menu-item">ACTIVITY & INTERESTS</a>
+                <a class="menu-item">ARTICLES (3)</a>
+              </nav>
+            </div>
+
+            <div class="profile-tab-items">
+              <div class="profile-tab-item is-active">
+                <div class="item about">
+                  <p class="item-title">About</p>
+                  <p class="about-text">
+                    I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites.
+                  </p>
+                  <a class="item-link" href="/">SEE MORE</a>
+                </div>
+                <div class="item projects">
+                  <p class="item-title">Projects <span class="slide-info">3 of 12</span></p>
+                  <div class="profile-swiper">
+                    <div class="swiper swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slide-container">
+                            <div class="project-img">
+                              <img src="/www/img/profile/project-1.jpg" alt="Project 1" />
+                            </div>
+                            <p class="project-title">Zara redesign concept</p>
+                            <p class="project-desc">UX/UI design, 15.07.2019</p>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="slide-container">
+                            <div class="project-img">
+                              <img src="/www/img/profile/project-2.jpg" alt="Project 2" />
+                            </div>
+                            <p class="project-title">SCTHON event brand identity</p>
+                            <p class="project-desc">Graphic design, 03.31.2019</p>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="slide-container">
+                            <div class="project-img">
+                              <img src="/www/img/profile/project-3.jpg" alt="Project 3" />
+                            </div>
+                            <p class="project-title">Drozd. Brand identity. 2016</p>
+                            <p class="project-desc">Graphic design, 03.04.2016</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-swipers button-next">
+                      <div class="svg-item">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.90625 5.54688L0.570311 2.58203L0.570311 0.285157L10.1562 4.72656L10.1562 6.4375L0.570312 10.8672L0.570312 8.57031L7.90625 5.54688Z" fill="#0275B1" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-swipers button-prev">
+                      <div class="svg-item">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.09375 5.45312L10.4297 8.41797V10.7148L0.84375 6.27344V4.5625L10.4297 0.132812V2.42969L3.09375 5.45312Z" fill="#0275B1" />
+                        </svg>
+                      </div>
+                    </div>
+                    <a class="item-link" href="/">SHOW ALL (12)</a>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-tab-item">Tab Item 2</div>
+              <div class="profile-tab-item">Tab Item 3</div>
+            </div>
           </div>
         </div>
         <div class="aside">right</div>
       </div>
     </div>
+
+    <script src="/www/js/profile.js"></script>
+    <script src="/www/js/swiperjs/swiper.js"></script>
+    <script src="/www/js/swiperjs/swipers.js"></script>
   </body>
 </html>

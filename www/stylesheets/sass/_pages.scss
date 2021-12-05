@@ -20,7 +20,7 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url('/www/img/profile/profile-background.jpg');
+            background-image: url("/www/img/profile/profile-background.jpg");
             padding: 1.87rem 1.25rem;
 
             .head-items {
@@ -163,6 +163,144 @@
                 border: 1px solid $color-primary;
                 color: $color-primary;
                 padding: 0.4rem 1rem;
+              }
+            }
+          }
+        }
+
+        .profile-tabs {
+          width: 100%;
+          border-bottom: 1px solid #e7e7e7;
+          margin-top: 1.37rem;
+          .profile-tabs-menu {
+            display: flex;
+            align-items: flex-end;
+            .menu-item {
+              background-color: $color-white;
+              border: none;
+              outline: 0;
+              box-shadow: none;
+              padding: 0.81rem 3rem;
+              font-weight: $weight-medium;
+              display: inline-block;
+              line-height: 1;
+              font-size: 0.75rem;
+              cursor: pointer;
+              border: 1px solid #e7e7e7;
+              border-top-left-radius: $radius-default;
+              border-top-right-radius: $radius-default;
+
+              &.is-active {
+                padding: 1.1rem 5rem;
+                background: $color-primary-linear;
+                color: $color-white;
+                border: 1px solid $color-primary;
+              }
+            }
+          }
+        }
+
+        .profile-tab-items {
+          margin-top: 1.87rem;
+          .profile-tab-item {
+            display: none;
+
+            &.is-active {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .item {
+              background-color: $color-white;
+              border-radius: $radius-default;
+              padding: 1.87rem;
+              &:not(:first-child) {
+                margin-top: 1.25rem;
+              }
+
+              .item-title {
+                font-weight: $weight-bold;
+                font-size: 1.12rem;
+                margin-bottom: 1rem;
+              }
+
+              .item-link {
+                color: $color-primary;
+                font-weight: $weight-medium;
+                font-size: 0.75rem;
+                display: inline-block;
+              }
+
+              &.about {
+                .about-text {
+                  font-size: 0.87rem;
+                  margin-bottom: 1rem;
+                }
+              }
+
+              &.projects {
+                .item-title {
+                  .slide-info {
+                    font-weight: $weight-regular;
+                    color: $color-gray;
+                    margin-left: 0.87rem;
+                  }
+                }
+
+                .profile-swiper {
+                  position: relative;
+                  .swiper-container {
+                    margin-bottom: 1.1rem;
+
+                    .swiper-wrapper {
+                      .swiper-slide {
+                        .slide-container {
+                          .project-img {
+                            height: 10rem;
+                            overflow: hidden;
+                            img {
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            }
+                          }
+
+                          .project-title {
+                            font-weight: $weight-bold;
+                            margin-top: 1rem;
+                            font-size: 0.97rem;
+                          }
+
+                          .project-desc {
+                            font-weight: $weight-light;
+                            font-size: 0.87rem;
+                            margin-top: 0.5rem;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .button-swipers {
+                    position: absolute;
+                    z-index: 1;
+                    cursor: pointer;
+
+                    svg {
+                      display: block;
+                    }
+
+                    &.button-prev {
+                      left: -1.25rem;
+                      top: 4.1rem;
+                    }
+                    &.button-next {
+                      right: -1.25rem;
+                      top: 4.1rem;
+                    }
+                  }
+                }
               }
             }
           }
