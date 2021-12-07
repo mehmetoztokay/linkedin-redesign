@@ -12,4 +12,18 @@ var swiper = new Swiper(".profile-swiper .swiper-container", {
     nextEl: ".profile-swiper .button-next",
     prevEl: ".profile-swiper .button-prev",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    577: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
 });

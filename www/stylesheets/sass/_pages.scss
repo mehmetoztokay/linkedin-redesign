@@ -2,12 +2,35 @@
 
 .page-profile {
   margin-top: 2.5rem;
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 1.5rem;
+  }
   .container {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
 
+    @media screen and (max-width: $desktop) {
+      padding: 0 1rem;
+    }
+
     .content {
+      @media screen and (max-width: $desktop) {
+        max-width: calc(100% - 19rem);
+
+        .main-container {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: $laptop) {
+        max-width: 100%;
+
+        .main-container {
+          width: 100%;
+        }
+      }
       .main-container {
         .profile-head {
           background-color: $color-white;
@@ -158,11 +181,41 @@
                 color: $color-white;
                 margin-right: 0.95rem;
                 padding: 0.4rem 2.25rem;
+
+                @media screen and (max-width: $mobile) {
+                  padding: 0.4rem 1.05rem;
+                }
               }
               .button-2 {
                 border: 1px solid $color-primary;
                 color: $color-primary;
                 padding: 0.4rem 1rem;
+              }
+            }
+
+            @media screen and (max-width: $mobile) {
+              flex-wrap: wrap;
+              height: auto;
+              padding-bottom: 2rem;
+              justify-content: center;
+              padding: 0 0.7rem;
+              padding-bottom: 1.5rem;
+
+              .pp {
+                .profile-photo {
+                  width: 7rem;
+                  height: 7rem;
+                }
+              }
+
+              .profile-info {
+                margin: 0;
+
+                .info-top {
+                  .title {
+                    margin-right: 1rem;
+                  }
+                }
               }
             }
           }
@@ -195,6 +248,15 @@
                 background: $color-primary-linear;
                 color: $color-white;
                 border: 1px solid $color-primary;
+              }
+            }
+          }
+
+          @media screen and (max-width: $mobile) {
+            .profile-tabs-menu {
+              .menu-item,
+              .menu-item.is-active {
+                padding: 0.71rem 0.45rem;
               }
             }
           }
@@ -381,6 +443,19 @@
                     }
                   }
                 }
+
+                @media screen and (max-width: $mobile) {
+                  .skills-items {
+                    flex-wrap: wrap;
+
+                    .skill-item,
+                    .skill-item:not(:last-child) {
+                      margin: 0;
+                      width: 100%;
+                      margin-top: 1rem;
+                    }
+                  }
+                }
               }
 
               &.experience {
@@ -497,6 +572,10 @@
     }
     .aside {
       max-width: 18.125rem;
+
+      @media screen and (max-width: $laptop) {
+        display: none;
+      }
 
       .aside-item {
         background-color: $color-white;
