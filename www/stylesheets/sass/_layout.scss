@@ -37,6 +37,7 @@ input {
 // Header
 .header {
   background-color: $color-white;
+  display: flex;
 
   @media screen and (max-width: $desktop) {
     padding: 0 0.5rem;
